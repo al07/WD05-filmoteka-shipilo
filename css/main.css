@@ -2103,3 +2103,20 @@ div.buttons {
     display: block;
     clear: both;
 }
+.notify {
+	background-color: #135613;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	
+}
+.notify--error {
+	background-color: #a82a2a;
+	color: #000;
+	font-weight: 600;
+}
+
+.single_image_class {
+	width: 100%;
+}
