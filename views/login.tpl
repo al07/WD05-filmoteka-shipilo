@@ -11,7 +11,7 @@
 					</div>
 					<div class="form-group">
 						<label class="label">Ваш город
-						<input class="input mt-20" name="password" type="password" id="password_input"/></label>
+						<input class="input mt-20" name="password" type="password" id="password_input" placeholder="Пароль"/></label>
 					</div>
 					<input class="button" type="submit" name="enter" value="Войти на сайт"/>
 			</form>

@@ -85,12 +85,13 @@
             return $result;
     }
 	
-	function film_update($link, $id, $title, $genre, $year, $descripton) {
+	function film_update($link, $id, $title, $genre, $year, $description) {
+		
 		$db_file_name = process_photo_if_required();
 		$query = "UPDATE `films` SET title = '".mysqli_real_escape_string($link, $title). 
 								  "',genre = '".mysqli_real_escape_string($link, $genre). 
 								  "',year = '".mysqli_real_escape_string($link, $year).
-								  "',description = '".mysqli_real_escape_string($link, @$description).
+								  "',description = '".mysqli_real_escape_string($link, $description).
 								  "',photo = '".mysqli_real_escape_string($link, $db_file_name). 
 								  "'WHERE id = ".mysqli_real_escape_string($link, $id)." LIMIT 1";
 		if ( mysqli_query($link, $query) ) {

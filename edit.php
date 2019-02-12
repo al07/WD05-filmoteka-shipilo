@@ -34,7 +34,7 @@
     }
 	$film_data = get_film($link, $_GET['id']);
 
-
+	echo "<pre>".print_r($_POST)."</pre>";
 	
 	require('views/notific.tpl');
 	require('views/edit-film.tpl');
